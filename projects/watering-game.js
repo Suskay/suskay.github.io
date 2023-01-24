@@ -14,9 +14,11 @@ function init() {
     }
 
     // decrease the charging level
-    setInterval(function() {
-        chargingLevel -= 1;
-        updateChargingLevel();
+    setInterval(function () {
+        if (chargingLevel > 0) {
+            chargingLevel -= 1;
+            updateChargingLevel();
+        }
     }, 1000);
 
     // update the charging level bar
@@ -25,11 +27,9 @@ function init() {
             chargingBars[i].style.height = chargingLevel + "%";
             if (chargingLevel <= 20) {
                 chargingBars[i].style.backgroundColor = "red";
-            }
-            else if (chargingLevel <= 50) {
+            } else if (chargingLevel <= 50) {
                 chargingBars[i].style.backgroundColor = "orange";
-            }
-            else {
+            } else {
                 chargingBars[i].style.backgroundColor = "#0f0";
             }
         }
@@ -43,4 +43,5 @@ function init() {
         }
     }
 }
+
 window.onload = init;
