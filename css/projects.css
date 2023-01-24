@@ -1,0 +1,126 @@
+
+#seestadt-project {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+#seestadt-project .heading {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #333;
+}
+
+#seestadt-project p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Add some styling to the images */
+#seestadt-project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#provocative-requisits,
+#design-game,
+#target-group,
+#design-of-the-interface,
+#outlook {
+    max-width: 80%;
+    margin: auto auto 50px;
+}
+
+#provocative-requisits h3,
+#design-game h3,
+#target-group h3,
+#design-of-the-interface h3,
+#outlook h3 {
+    margin-bottom: 20px;
+}
+
+#provocative-requisits img,
+#design-game img,
+#target-group img,
+#design-of-the-interface img,
+#outlook img {
+    max-width: 100%;
+    margin-top: 20px;
+}
+#gameContainer {
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+#batteryContainer {
+    width: 50px;
+    height: 220px;
+    background-color: #666;
+    left: 350px;
+    top: 0;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+.chargingBar {
+    width: 50px;
+    height: 20px;
+    background-color: #0f0;
+    position: absolute;
+    left: 0;
+    top: 0; /* changed from bottom */
+    border-radius: 25px 25px 0 0; /* changed from bottom-left */
+    transform-origin: top; /* changed from bottom */
+    overflow: hidden; /* added */
+}
+.chargingBar:nth-child(2){
+    bottom: 20%;
+}
+.chargingBar:nth-child(3){
+    bottom: 40%;
+}
+.chargingBar:nth-child(4){
+    bottom: 60%;
+}
+.chargingBar:nth-child(5){
+    bottom: 80%;
+}
+
+.plantContainer {
+    left: 200px;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 75px;
+    display: flex;
+}
+
+.plant {
+    width: 150px;
+    height: 150px;
+    background-image: url("../images/plant.png");
+    background-size: cover;
+}
+.plant:nth-child(2) {
+    left: 150px;
+}
+.plant:nth-child(3) {
+    left: 300px;
+}
+.plant:nth-child(4) {
+    left: 450px;
+}
+.plant:nth-child(5) {
+    left: 600px;
+}
+
+body {
+    cursor: url('../images/watering-can-icon.svg'), auto;
+}
